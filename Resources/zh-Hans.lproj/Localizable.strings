@@ -2,3 +2,4 @@
 "mode.min" = "最低";
 "mode.max" = "最高";
 "mode.custom" = "自定义";
+"settings.title" = "FanControl 设置";

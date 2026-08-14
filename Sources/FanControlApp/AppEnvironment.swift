@@ -67,6 +67,29 @@ final class AppEnvironment: ObservableObject {
         }
         try? p.run()
     }
+
+    private var settingsWindow: NSWindow?
+
+    func openSettings() {
+        if let w = settingsWindow {
+            w.makeKeyAndOrderFront(nil)
+            NSApp.activate(ignoringOtherApps: true)
+            return
+        }
+        let window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 420, height: 260),
+            styleMask: [.titled, .closable],
+            backing: .buffered,
+            defer: false
+        )
+        window.title = NSLocalizedString("settings.title", comment: "Settings")
+        window.contentView = NSHostingView(rootView: SettingsView(env: self))
+        window.center()
+        window.isReleasedWhenClosed = false
+        window.makeKeyAndOrderFront(nil)
+        settingsWindow = window
+        NSApp.activate(ignoringOtherApps: true)
+    }
 }
 
 /// FanReading backed by the real SMC connection

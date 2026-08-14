@@ -17,9 +17,5 @@ struct FanControlApp: App {
             Image(systemName: "fanblades.fill")
         }
         .menuBarExtraStyle(.window)
-
-        Settings {
-            SettingsView(env: env)
-        }
     }
 }

@@ -2,3 +2,4 @@
 "mode.min" = "Min";
 "mode.max" = "Max";
 "mode.custom" = "Custom";
+"settings.title" = "FanControl Settings";

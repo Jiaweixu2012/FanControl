@@ -35,13 +35,7 @@ struct MenuBarPanelView: View {
             modePicker
             Divider()
             HStack {
-                if #available(macOS 14.0, *) {
-                    SettingsLink {
-                        Label("打开设置", systemImage: "gearshape")
-                    }
-                } else {
-                    Button("打开设置") { openSettings() }
-                }
+                Button("打开设置") { env.openSettings() }
                 Spacer()
                 Button("退出") { NSApplication.shared.terminate(nil) }
             }
@@ -93,14 +87,6 @@ struct MenuBarPanelView: View {
     private func applyCustom() {
         controller.customRPM = rpmText
         try? controller.applyMode()
-    }
-
-    private func openSettings() {
-        if #available(macOS 14.0, *) {
-            NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
-        } else {
-            NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
-        }
     }
 }
 
