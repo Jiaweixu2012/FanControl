@@ -24,7 +24,7 @@
 - SMC 访问: 直接调 IOKit `AppleSMC` 服务，不依赖第三方库
 - 图标: 用 CoreGraphics 程序化绘制，`iconutil` 打包成 .icns
 - 开机自启: `SMAppService.mainApp`，回退 LaunchAgent
-- 国际化: String Catalog，跟随系统语言 (中/英)
+- 国际化: `Localizable.strings` + `.lproj`（en / zh-Hans），跟随系统语言（说明：String Catalog `.xcstrings` 无法被纯 SPM `swift build` 编译，故用传统 .strings 方案）
 
 ## 项目结构
 
@@ -59,7 +59,7 @@ FanControl/
   - `F0Ac`..`FnAc` (fpe2) — 当前风扇转速 (RPM)
   - `F0Mn`..`FnMn` (fpe2) — 风扇最低转速
   - `F0Mx`..`FnMx` (fpe2) — 风扇最高转速
-  - `TC0P`/`TC0E` (sp78) — CPU 温度 (°C)
+  - `TC0P` (sp78) — CPU 温度 (°C)（固定使用 TC0P，不使用 TC0E）
 - 写入:
   - `F0Md`..`FnMd` (ch8) — 手动模式开关 (1=手动, 0=自动)
   - `F0Tg`..`FnTg` (fpe2) — 目标转速 (RPM)
@@ -103,6 +103,10 @@ class FanController: ObservableObject {
 - `min`: 写 `F0Md`=1 + `F0Tg`=`F0Mn`
 - `max`: 写 `F0Md`=1 + `F0Tg`=`F0Mx`
 - `custom`: 写 `F0Md`=1 + `F0Tg`=输入框解析出的 RPM（校验范围 min..max，非法输入提示）
+
+**作用域（多风扇）**: 模式与自定义 RPM 对**所有**检测到的风扇生效（目标机为多风扇机型）。自定义 RPM 的输入校验范围取全局范围：所有风扇 min 的最小值 .. 所有风扇 max 的最大值；实际应用时对每个风扇按其自身 [F0Mn, F0Mx] 做 clamp，防止越界。
+
+**启动行为（含开机自启）**: App 启动时从 `@AppStorage` 恢复上次保存的模式和自定义 RPM，并**立即重新写回 SMC**（与 smcFanControl 一致：用户设置的手动转速在重启后保持）。启动时同时开始 2 秒定时轮询刷新显示。
 
 ### 3. SwiftUI 界面 (FanControlApp)
 
