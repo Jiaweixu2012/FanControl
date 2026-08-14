@@ -73,10 +73,10 @@ FanControl/
   - `F0Ac`..`FnAc` (flt/fpe2) — 当前风扇转速 (RPM)
   - `F0Mn`..`FnMn` (flt/fpe2) — 风扇最低转速
   - `F0Mx`..`FnMx` (flt/fpe2) — 风扇最高转速
-  - `TC0P` (sp78) — CPU 温度 (°C)，按 sp78 解码：`Int(b[0])<<8 | Int(b[1])` 再 /256（固定使用 TC0P，不使用 TC0E）
+  - `TC0P` (sp78) — CPU 温度 (°C)，按 sp78 解码（注意负数：先取符号扩展/按 Int16 处理再 /256）：`Int(Int16(bitPattern: UInt16(b[0])<<8 | UInt16(b[1]))) / 256.0`（固定使用 TC0P，不使用 TC0E）
 - 写入（仅由 root 守护进程执行）:
   - `F0Md`..`FnMd` (ui8) — 手动模式开关 (1=手动, 0=自动)，写 1 字节，keyInfo.dataSize=1
-  - `F0Tg`..`FnTg` (flt/fpe2) — 目标转速 (RPM)，写 4 字节 (flt)，keyInfo.dataSize=4
+  - `F0Tg`..`FnTg` (flt/fpe2) — 目标转速 (RPM)，写 4 字节 (flt)，keyInfo.dataSize=4（若 KEYINFO 报 fpe2 则写 2 字节——按目标机实测为 flt，fpe2 机型留作兼容）
   - 注意：写入也必须把 keyInfo.dataSize（和 dataType）回填到输入结构，否则写入失败
 
 API:
@@ -129,7 +129,7 @@ class FanController: ObservableObject {
 
 - 与 App 同一二进制? 否——独立可执行文件，root 运行。
 - 安装位置: `/Library/PrivilegedHelperTools/FanControlHelper`，LaunchDaemon plist 位于 `/Library/LaunchDaemons/com.fancontrol.helper.plist`（ProgramArguments = [helperPath, "--daemon"], RunAtLoad）。
-- 启动时创建 Unix socket `/var/run/FanControlHelper.sock`（**chmod 0666**，否则 root 创建、用户态 App 无法 connect），监听命令（行协议，JSON）:
+- 启动时创建 Unix socket `/var/run/FanControlHelper.sock`（**先 unlink 残留 socket 再 bind**；**chmod 0666**，否则 root 创建、用户态 App 无法 connect），监听命令（行协议，JSON）:
   - `{"cmd":"ping"}`
   - `{"cmd":"set","index":0,"rpm":2000.0}` — 写入 F0Md=1 + F0Tg（mode 字段可省略/忽略，daemon 只做 F0Md=1）
   - `{"cmd":"auto","index":0}` — 写入 F0Md=0
