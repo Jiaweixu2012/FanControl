@@ -133,7 +133,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/FanController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/HelperProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/Model.swift"
         },
         {
           "kind" : "file",
@@ -157,7 +165,9 @@
       "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule",
       "objects" : [
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanController.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/Model.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
       ],
@@ -224,7 +234,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/Model.swift.o"
         },
         {
           "kind" : "file",
@@ -242,7 +260,9 @@
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift",
+        "/Users/xujiawei/FanControl/Sources/FanControlCore/FanController.swift",
         "/Users/xujiawei/FanControl/Sources/FanControlCore/HelperProtocol.swift",
+        "/Users/xujiawei/FanControl/Sources/FanControlCore/Model.swift",
         "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift",
         "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift"
       ],
@@ -257,6 +277,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControllerTests.swift"
         },
         {
           "kind" : "file",
@@ -288,6 +312,7 @@
       "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule",
       "objects" : [
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControllerTests.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/HelperProtocolTests.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swift.o",
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCProtocolTests.swift.o"
@@ -354,6 +379,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControllerTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/HelperProtocolTests.swift.o"
         },
         {
@@ -372,6 +401,7 @@
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift",
+        "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControllerTests.swift",
         "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/HelperProtocolTests.swift",
         "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift",
         "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift"
@@ -660,7 +690,9 @@
       "fancontrol",
       "-c",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift",
+      "/Users/xujiawei/FanControl/Sources/FanControlCore/FanController.swift",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/HelperProtocol.swift",
+      "/Users/xujiawei/FanControl/Sources/FanControlCore/Model.swift",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift",
       "-I",
@@ -729,6 +761,7 @@
       "fancontrol",
       "-c",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift",
+      "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControllerTests.swift",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/HelperProtocolTests.swift",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift",
@@ -993,7 +1026,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/Model.swift.o"
         },
         {
           "kind" : "file",
@@ -1033,7 +1074,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/FanController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/HelperProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/Model.swift"
         },
         {
           "kind" : "file",
@@ -1056,6 +1105,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControllerTests.swift"
         },
         {
           "kind" : "file",
@@ -1113,7 +1166,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/Model.swift.o"
         },
         {
           "kind" : "file",
@@ -1157,7 +1218,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/Model.swift.o"
         },
         {
           "kind" : "file",
@@ -1170,6 +1239,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControllerTests.swift.o"
         },
         {
           "kind" : "file",
