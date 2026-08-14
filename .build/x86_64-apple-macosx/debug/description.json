@@ -137,6 +137,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
@@ -149,7 +153,8 @@
       "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule",
       "objects" : [
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o",
-        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.swift.o"
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.swift.o",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -218,13 +223,18 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift",
-        "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift"
+        "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift",
+        "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift"
       ],
       "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build",
       "wholeModuleOptimization" : false
@@ -244,6 +254,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
@@ -260,7 +274,8 @@
       "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule",
       "objects" : [
         "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o",
-        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swift.o"
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swift.o",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCProtocolTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -328,13 +343,18 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCProtocolTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift",
-        "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift"
+        "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift",
+        "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift"
       ],
       "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build",
       "wholeModuleOptimization" : false
@@ -621,6 +641,7 @@
       "-c",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift",
       "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift",
+      "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift",
       "-I",
       "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
       "-target",
@@ -688,6 +709,7 @@
       "-c",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift",
       "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift",
+      "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift",
       "-I",
       "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
       "-target",
@@ -950,6 +972,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
         }
       ],
       "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl.product/Objects.LinkFileList"
@@ -982,6 +1008,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCConnection.swift"
         }
       ],
       "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/sources"
@@ -1000,6 +1030,10 @@
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCProtocolTests.swift"
         }
       ],
       "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/sources"
@@ -1049,6 +1083,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/main.swift.o"
         }
       ],
@@ -1085,11 +1123,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCConnection.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCProtocolTests.swift.o"
         },
         {
           "kind" : "file",
