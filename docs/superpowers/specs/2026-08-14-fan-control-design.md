@@ -73,10 +73,11 @@ FanControl/
   - `F0Ac`..`FnAc` (flt/fpe2) — 当前风扇转速 (RPM)
   - `F0Mn`..`FnMn` (flt/fpe2) — 风扇最低转速
   - `F0Mx`..`FnMx` (flt/fpe2) — 风扇最高转速
-  - `TC0P` (sp78) — CPU 温度 (°C)（固定使用 TC0P，不使用 TC0E）
+  - `TC0P` (sp78) — CPU 温度 (°C)，按 sp78 解码：`Int(b[0])<<8 | Int(b[1])` 再 /256（固定使用 TC0P，不使用 TC0E）
 - 写入（仅由 root 守护进程执行）:
-  - `F0Md`..`FnMd` (ui8) — 手动模式开关 (1=手动, 0=自动)
-  - `F0Tg`..`FnTg` (flt/fpe2) — 目标转速 (RPM)
+  - `F0Md`..`FnMd` (ui8) — 手动模式开关 (1=手动, 0=自动)，写 1 字节，keyInfo.dataSize=1
+  - `F0Tg`..`FnTg` (flt/fpe2) — 目标转速 (RPM)，写 4 字节 (flt)，keyInfo.dataSize=4
+  - 注意：写入也必须把 keyInfo.dataSize（和 dataType）回填到输入结构，否则写入失败
 
 API:
 ```swift
@@ -128,14 +129,14 @@ class FanController: ObservableObject {
 
 - 与 App 同一二进制? 否——独立可执行文件，root 运行。
 - 安装位置: `/Library/PrivilegedHelperTools/FanControlHelper`，LaunchDaemon plist 位于 `/Library/LaunchDaemons/com.fancontrol.helper.plist`（ProgramArguments = [helperPath, "--daemon"], RunAtLoad）。
-- 启动时创建 Unix socket `/var/run/FanControlHelper.sock`，监听命令（行协议，JSON）:
+- 启动时创建 Unix socket `/var/run/FanControlHelper.sock`（**chmod 0666**，否则 root 创建、用户态 App 无法 connect），监听命令（行协议，JSON）:
   - `{"cmd":"ping"}`
-  - `{"cmd":"set","index":0,"mode":"manual","rpm":2000.0}` — 写入 F0Md=1 + F0Tg
+  - `{"cmd":"set","index":0,"rpm":2000.0}` — 写入 F0Md=1 + F0Tg（mode 字段可省略/忽略，daemon 只做 F0Md=1）
   - `{"cmd":"auto","index":0}` — 写入 F0Md=0
-  - `{"cmd":"shutdown"}` — 退出
+  - `{"cmd":"shutdown"}` — 退出（仅卸载流程调用）
 - 每个命令返回 JSON: `{"ok":true}` 或 `{"ok":false,"error":"..."}`。
 - 无命令时保持空转，连接数低占用。
-- App 通过 HelperClient 连接 socket 下发命令并读回结果。
+- App 通过 HelperClient 连接 socket 下发命令并读回结果。**applyMode 对每个检测到的风扇各发一条命令**（daemon 无"全部风扇"命令）。
 
 ### 4. SwiftUI 界面 (FanControlApp)
 
@@ -152,8 +153,7 @@ class FanController: ObservableObject {
 
 ### 5. 安装/卸载守护进程 (HelperInstaller + install.sh)
 
-- App 首次需要调速时: 检查 socket 是否可连 → 不可连则调 `osascript` 以管理员权限运行 `install.sh`（复制 helper 到 /Library/PrivilegedHelperTools、写 plist、`launchctl bootstrap` 加载）。
-- `install.sh` 内含提权操作，需用户输一次密码。
+- App 首次需要调速时: 检查 socket 是否可连 → 不可连则把 bundle 内 `Resources/install.sh` 复制到临时目录，用 `osascript` 以管理员权限运行 `install.sh`（复制 helper 到 /Library/PrivilegedHelperTools、写 plist、`launchctl bootstrap` 加载、启动后自检 SMC 写入）。`install.sh` 与 helper 一起打进 App bundle（Resources/）。
 - 设置窗口提供"卸载守护进程"（同样提权执行卸载脚本）。
 - 验证: 安装后 helper 自检 SMC 写入（试写 F0Md 同值并还原），返回结果给 App 显示。
 
