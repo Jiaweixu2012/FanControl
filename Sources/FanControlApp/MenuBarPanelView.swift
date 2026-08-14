@@ -35,7 +35,13 @@ struct MenuBarPanelView: View {
             modePicker
             Divider()
             HStack {
-                Button("打开设置") { openSettings() }
+                if #available(macOS 14.0, *) {
+                    SettingsLink {
+                        Label("打开设置", systemImage: "gearshape")
+                    }
+                } else {
+                    Button("打开设置") { openSettings() }
+                }
                 Spacer()
                 Button("退出") { NSApplication.shared.terminate(nil) }
             }
