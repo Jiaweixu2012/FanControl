@@ -8,5 +8,12 @@
     "swiftmodule": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests~partial.swiftmodule",
     "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swiftdeps",
     "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.dia"
+  },
+  "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/SMCCodecTests.swift": {
+    "dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.d",
+    "object": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swift.o",
+    "swiftmodule": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.swiftdeps",
+    "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/SMCCodecTests.dia"
   }
 }
