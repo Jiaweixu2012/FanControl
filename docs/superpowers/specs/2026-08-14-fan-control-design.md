@@ -92,7 +92,7 @@ class FanController: ObservableObject {
     @Published var cpuTemp: Double
     @Published var errorMessage: String?
 
-    func applyMode()          // 按当前模式写入 SMC
+    func applyMode()          // 按当前模式写入 SMC；Picker 切换即时生效（自动调用），自定义模式需点击"应用"按钮
     func refresh()            // 定时读取 (每 2 秒)
     func startTimer() / stopTimer()
 }
@@ -129,7 +129,7 @@ class FanController: ObservableObject {
 
 ### 5. build.sh
 
-1. `swift build -c release --product FanControl`
+1. `swift build -c release --product FanControl`（SPM 产品名 = `FanControl`，可执行 target = `FanControlApp`，二进制产物直接用于 .app）
 2. `swift Resources/make_icon.swift` 生成 PNGs → `iconutil -c icns`
 3. 组装 `FanControl.app/Contents`:
    - `MacOS/FanControl` (可执行文件)
