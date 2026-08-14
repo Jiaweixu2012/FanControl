@@ -901,7 +901,8 @@ final class HelperDaemon {
             if byte == 0x0A {   // '\n'
                 let line = String(bytes: buf, encoding: .utf8) ?? ""
                 let resp = process(line)
-                if let data = resp.data(using: .utf8) {
+                let framed = resp.hasSuffix("\n") ? resp : resp + "\n"   // client waits for \n
+                if let data = framed.data(using: .utf8) {
                     data.withUnsafeBytes { raw in
                         _ = write(client, raw.baseAddress, raw.count)
                     }
@@ -1250,17 +1251,9 @@ public struct HelperInstaller {
         HelperClient(socketPath: socketPath).ping()
     }
 
-    /// Returns the admin shell script to install the daemon.
-    public func installScript() -> String {
-        let appBundle = bundledInstallScriptPath
-        return appBundle
-    }
-
-    /// The osascript command that runs install.sh with admin rights.
-    public func adminInstallCommand() -> String {
-        let script = bundledInstallScriptPath
-        let cmd = "do shell script quoted form of \\"\(script)\\" with administrator privileges"
-        return "osascript -e \(cmd)"
+    /// App bundle path passed to install.sh (which is copied to /tmp before running as admin)
+    public var appBundlePath: String {
+        bundledInstallScriptPath.replacingOccurrences(of: "/Contents/Resources/install.sh", with: "")
     }
 }
 ```
@@ -1277,7 +1270,7 @@ set -e
 HELPER_NAME="FanControlHelper"
 INSTALL_DIR="/Library/PrivilegedHelperTools"
 PLIST_PATH="/Library/LaunchDaemons/com.fancontrol.helper.plist"
-APP_BUNDLE="${1:-$(dirname "$0")/../../..}"
+APP_BUNDLE="${1:?usage: install.sh <AppBundlePath>}"   # e.g. /Applications/FanControl.app
 
 mkdir -p "$INSTALL_DIR"
 cp "$APP_BUNDLE/Contents/Resources/$HELPER_NAME" "$INSTALL_DIR/$HELPER_NAME"
@@ -1387,10 +1380,11 @@ final class AppEnvironment: ObservableObject {
     }
 
     func installHelper() {
-        let cmd = helperInstaller.adminInstallCommand()
+        let bundlePath = helperInstaller.bundledInstallScriptPath.replacingOccurrences(of: "/Contents/Resources/install.sh", with: "")
+        let script = helperInstaller.bundledInstallScriptPath
         let p = Process()
         p.executableURL = URL(fileURLWithPath: "/usr/bin/osascript")
-        p.arguments = ["-e", "do shell script quoted form of \"\(helperInstaller.bundledInstallScriptPath)\" with administrator privileges"]
+        p.arguments = ["-e", "do shell script \\"\(script)\\" & space & quoted form of \\"\(bundlePath)\\" with administrator privileges"]
         p.terminationHandler = { [weak self] _ in
             DispatchQueue.main.async {
                 self?.helperAvailable = self?.helperInstaller.helperResponding() ?? false
