@@ -9,10 +9,13 @@ public enum SMCError: Error, LocalizedError {
     case closed
 
     public var errorDescription: String? {
+        func hex(_ r: kern_return_t) -> String {
+            String(format: "0x%08x", UInt32(bitPattern: r))
+        }
         switch self {
         case .serviceNotFound: return "AppleSMC service not found"
-        case .openFailed(let r): return "Failed to open AppleSMC (kern 0x\(String(r, radix: 16)))"
-        case .callFailed(let r): return "SMC call failed (kern 0x\(String(r, radix: 16)))"
+        case .openFailed(let r): return "Failed to open AppleSMC (\(hex(r)))"
+        case .callFailed(let r): return "SMC call failed (\(hex(r)))"
         case .keyNotFound(let k): return "SMC key \(k) not found"
         case .closed: return "SMC session closed"
         }
