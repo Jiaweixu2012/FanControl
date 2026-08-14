@@ -1,0 +1,4 @@
+"mode.auto" = "Auto";
+"mode.min" = "Min";
+"mode.max" = "Max";
+"mode.custom" = "Custom";
