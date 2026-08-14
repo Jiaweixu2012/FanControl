@@ -9,6 +9,13 @@
     "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swiftdeps",
     "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.dia"
   },
+  "/Users/xujiawei/FanControl/Sources/FanControlCore/HelperProtocol.swift": {
+    "dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.d",
+    "object": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swift.o",
+    "swiftmodule": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.swiftdeps",
+    "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/HelperProtocol.dia"
+  },
   "/Users/xujiawei/FanControl/Sources/FanControlCore/SMCCodec.swift": {
     "dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.d",
     "object": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/SMCCodec.swift.o",
