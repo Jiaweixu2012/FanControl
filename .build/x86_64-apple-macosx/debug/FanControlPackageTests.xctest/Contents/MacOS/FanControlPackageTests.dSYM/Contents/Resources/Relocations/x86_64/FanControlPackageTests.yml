@@ -1,0 +1,52 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.xctest/Contents/MacOS/FanControlPackageTests'
+relocations:
+  - { offset: 0xDAE94, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6string_WZ', symObjAddr: 0x0, symBinAddr: 0x1110, symSize: 0x30 }
+  - { offset: 0xDAEB8, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvpZ', symObjAddr: 0xE00, symBinAddr: 0x4178, symSize: 0x0 }
+  - { offset: 0xDAEC6, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6string_WZ', symObjAddr: 0x0, symBinAddr: 0x1110, symSize: 0x30 }
+  - { offset: 0xDAEE0, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvau', symObjAddr: 0x30, symBinAddr: 0x1140, symSize: 0x40 }
+  - { offset: 0xDAF1A, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionOMa', symObjAddr: 0xA0, symBinAddr: 0x11B0, symSize: 0xC }
+  - { offset: 0xDAF52, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvgZ', symObjAddr: 0x70, symBinAddr: 0x1180, symSize: 0x30 }
+  - { offset: 0xDAFE4, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC11testVersionyyF', symObjAddr: 0x0, symBinAddr: 0x11C0, symSize: 0xB0 }
+  - { offset: 0xDB127, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAACMa', symObjAddr: 0x450, symBinAddr: 0x1610, symSize: 0x20 }
+  - { offset: 0xDB13B, size: 0x8, addend: 0x0, symName: '_$s6XCTest14XCTAssertEqual___4file4lineyxyKXK_xyKXKSSyXKs12StaticStringVSutSQRzlFfA1_SSycfu_', symObjAddr: 0x470, symBinAddr: 0x1630, symSize: 0x20 }
+  - { offset: 0xDB153, size: 0x8, addend: 0x0, symName: '_$sSSWOc', symObjAddr: 0x490, symBinAddr: 0x1650, symSize: 0x31 }
+  - { offset: 0xDB16F, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC11testVersionyyF', symObjAddr: 0x0, symBinAddr: 0x11C0, symSize: 0xB0 }
+  - { offset: 0xDB192, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC11testVersionyyFSSyKXEfu_', symObjAddr: 0xB0, symBinAddr: 0x1270, symSize: 0x30 }
+  - { offset: 0xDB1B1, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC11testVersionyyFSSyKXEfu0_', symObjAddr: 0xE0, symBinAddr: 0x12A0, symSize: 0x40 }
+  - { offset: 0xDB1DB, size: 0x8, addend: 0x0, symName: '_$s6XCTest14XCTAssertEqual___4file4lineyxyKXK_xyKXKSSyXKs12StaticStringVSutSQRzlFfA1_', symObjAddr: 0x120, symBinAddr: 0x12E0, symSize: 0x20 }
+  - { offset: 0xDB206, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC11testVersionyyFTo', symObjAddr: 0x140, symBinAddr: 0x1300, symSize: 0x30 }
+  - { offset: 0xDB259, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC10invocationABSo12NSInvocationCSg_tcfC', symObjAddr: 0x170, symBinAddr: 0x1330, symSize: 0x50 }
+  - { offset: 0xDB26D, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC10invocationABSo12NSInvocationCSg_tcfc', symObjAddr: 0x1C0, symBinAddr: 0x1380, symSize: 0x90 }
+  - { offset: 0xDB2B7, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC10invocationABSo12NSInvocationCSg_tcfcTo', symObjAddr: 0x250, symBinAddr: 0x1410, symSize: 0x30 }
+  - { offset: 0xDB2E2, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC8selectorAB10ObjectiveC8SelectorV_tcfC', symObjAddr: 0x280, symBinAddr: 0x1440, symSize: 0x40 }
+  - { offset: 0xDB2F6, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC8selectorAB10ObjectiveC8SelectorV_tcfc', symObjAddr: 0x2C0, symBinAddr: 0x1480, symSize: 0x80 }
+  - { offset: 0xDB327, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAAC8selectorAB10ObjectiveC8SelectorV_tcfcTo', symObjAddr: 0x340, symBinAddr: 0x1500, symSize: 0x20 }
+  - { offset: 0xDB33B, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAACABycfC', symObjAddr: 0x360, symBinAddr: 0x1520, symSize: 0x20 }
+  - { offset: 0xDB34F, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAACABycfc', symObjAddr: 0x380, symBinAddr: 0x1540, symSize: 0x70 }
+  - { offset: 0xDB373, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAACABycfcTo', symObjAddr: 0x3F0, symBinAddr: 0x15B0, symSize: 0x20 }
+  - { offset: 0xDB387, size: 0x8, addend: 0x0, symName: '_$s19FanControlCoreTestsAACfD', symObjAddr: 0x410, symBinAddr: 0x15D0, symSize: 0x40 }
+  - { offset: 0xDB446, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV14testingLibrary33_754BFB7C22C99362429415CF4DCD4BE2LLSSyFZ', symObjAddr: 0x0, symBinAddr: 0x1690, symSize: 0x290 }
+  - { offset: 0xDB559, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x290, symBinAddr: 0x1920, symSize: 0x70 }
+  - { offset: 0xDB56D, size: 0x8, addend: 0x0, symName: '_$sSaySSGSayxGSlsWl', symObjAddr: 0x300, symBinAddr: 0x1990, symSize: 0x60 }
+  - { offset: 0xDB581, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameAbstractV2, symObjAddr: 0x360, symBinAddr: 0x19F0, symSize: 0x70 }
+  - { offset: 0xDB595, size: 0x8, addend: 0x0, symName: '_$ss16IndexingIteratorVySaySSGGWOh', symObjAddr: 0x3D0, symBinAddr: 0x1A60, symSize: 0x20 }
+  - { offset: 0xDB5A9, size: 0x8, addend: 0x0, symName: '_$sS2cMScAsWl', symObjAddr: 0x650, symBinAddr: 0x1CE0, symSize: 0x50 }
+  - { offset: 0xDB5BD, size: 0x8, addend: 0x0, symName: '_$sIetH_yts5Error_pIegHrzo_TR', symObjAddr: 0x8F0, symBinAddr: 0x1F80, symSize: 0x70 }
+  - { offset: 0xDB5DC, size: 0x8, addend: 0x0, symName: '_$sIetH_yts5Error_pIegHrzo_TRTQ0_', symObjAddr: 0x960, symBinAddr: 0x1FF0, symSize: 0x60 }
+  - { offset: 0xDB5FB, size: 0x8, addend: 0x0, symName: '_$sIetH_yts5Error_pIegHrzo_TRTA', symObjAddr: 0x9E0, symBinAddr: 0x2070, symSize: 0x80 }
+  - { offset: 0xDB60F, size: 0x8, addend: 0x0, symName: '_$sIetH_yts5Error_pIegHrzo_TRTATQ0_', symObjAddr: 0xA60, symBinAddr: 0x20F0, symSize: 0x60 }
+  - { offset: 0xDB623, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerVMa', symObjAddr: 0xAC0, symBinAddr: 0x2150, symSize: 0xC }
+  - { offset: 0xDB67E, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV14testingLibrary33_754BFB7C22C99362429415CF4DCD4BE2LLSSyFZ', symObjAddr: 0x0, symBinAddr: 0x1690, symSize: 0x290 }
+  - { offset: 0xDB706, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV4mainyyYaFZ', symObjAddr: 0x3F0, symBinAddr: 0x1A80, symSize: 0xA0 }
+  - { offset: 0xDB747, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV4mainyyYaFZTY0_', symObjAddr: 0x490, symBinAddr: 0x1B20, symSize: 0x160 }
+  - { offset: 0xDB78B, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV4mainyyYaFZTQ1_', symObjAddr: 0x5F0, symBinAddr: 0x1C80, symSize: 0x60 }
+  - { offset: 0xDB7D0, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV5$mainyyYaFZ', symObjAddr: 0x6A0, symBinAddr: 0x1D30, symSize: 0x70 }
+  - { offset: 0xDB7EF, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV5$mainyyYaFZTQ0_', symObjAddr: 0x710, symBinAddr: 0x1DA0, symSize: 0x80 }
+  - { offset: 0xDB80E, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerV5$mainyyYaFZTY1_', symObjAddr: 0x790, symBinAddr: 0x1E20, symSize: 0x40 }
+  - { offset: 0xDB82D, size: 0x8, addend: 0x0, symName: '_$s22FanControlPackageTests6RunnerVACycfC', symObjAddr: 0x7D0, symBinAddr: 0x1E60, symSize: 0x10 }
+  - { offset: 0xDB84F, size: 0x8, addend: 0x0, symName: _async_Main, symObjAddr: 0x7E0, symBinAddr: 0x1E70, symSize: 0x60 }
+  - { offset: 0xDB863, size: 0x8, addend: 0x0, symName: _async_MainTQ0_, symObjAddr: 0x840, symBinAddr: 0x1ED0, symSize: 0x40 }
+  - { offset: 0xDB877, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x880, symBinAddr: 0x1F10, symSize: 0x70 }
+...

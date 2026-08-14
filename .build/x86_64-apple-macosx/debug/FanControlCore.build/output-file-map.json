@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/master.swiftdeps"
+  },
+  "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift": {
+    "dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.d",
+    "object": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o",
+    "swiftmodule": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore~partial.swiftmodule",
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swiftdeps",
+    "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.dia"
+  }
+}

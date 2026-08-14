@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/master.swiftdeps"
+  },
+  "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift": {
+    "dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.d",
+    "object": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o",
+    "swiftmodule": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swiftdeps",
+    "diagnostics": "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.dia"
+  }
+}

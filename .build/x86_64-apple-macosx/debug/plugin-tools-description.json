@@ -1,0 +1,1070 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.xctest/Contents/MacOS/FanControlPackageTests",
+      "packagePath" : "/Users/xujiawei/FanControl",
+      "productName" : "FanControlPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.FanControlApp-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/sources",
+      "importPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlApp/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "FanControlApp",
+      "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlApp.swiftmodule",
+      "objects" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "FanControlApp_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fancontrol"
+      ],
+      "outputFileMapPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/xujiawei/FanControl/Sources/FanControlApp/main.swift"
+      ],
+      "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FanControlCore-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/sources",
+      "importPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FanControlCore",
+      "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule",
+      "objects" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/include/FanControlCore-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fancontrol"
+      ],
+      "outputFileMapPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift"
+      ],
+      "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FanControlCoreTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/sources",
+      "importPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FanControlCoreTests",
+      "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule",
+      "objects" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fancontrol"
+      ],
+      "outputFileMapPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift"
+      ],
+      "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FanControlHelper-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/sources",
+      "importPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlHelper/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "FanControlHelper",
+      "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlHelper.swiftmodule",
+      "objects" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "FanControlHelper_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fancontrol"
+      ],
+      "outputFileMapPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlHelper.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/xujiawei/FanControl/Sources/FanControlHelper/main.swift"
+      ],
+      "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FanControlPackageTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/sources",
+      "importPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlCoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FanControlPackageTests",
+      "moduleOutputPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/include/FanControlPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fancontrol"
+      ],
+      "outputFileMapPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules/FanControlPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "FanControlApp" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FanControlApp",
+      "-package-name",
+      "fancontrol",
+      "-c",
+      "/Users/xujiawei/FanControl/Sources/FanControlApp/main.swift",
+      "-I",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "FanControlApp_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fancontrol",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FanControlCore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FanControlCore",
+      "-package-name",
+      "fancontrol",
+      "-c",
+      "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift",
+      "-I",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/include/FanControlCore-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fancontrol",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FanControlCoreTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FanControlCoreTests",
+      "-package-name",
+      "fancontrol",
+      "-c",
+      "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift",
+      "-I",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fancontrol",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FanControlHelper" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FanControlHelper",
+      "-package-name",
+      "fancontrol",
+      "-c",
+      "/Users/xujiawei/FanControl/Sources/FanControlHelper/main.swift",
+      "-I",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "FanControlHelper_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fancontrol",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FanControlPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FanControlPackageTests",
+      "-package-name",
+      "fancontrol",
+      "-c",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/include/FanControlPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fancontrol",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "FanControlApp" : [
+      "FanControlCore"
+    ],
+    "FanControlCore" : [
+
+    ],
+    "FanControlCoreTests" : [
+      "FanControlCore"
+    ],
+    "FanControlHelper" : [
+      "FanControlCore"
+    ],
+    "FanControlPackageTests" : [
+      "FanControlCoreTests",
+      "FanControlCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl-entitlement.plist"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl.product/Objects.LinkFileList"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlApp/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlApp.build/sources"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlCore/FanControlCore.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/sources"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Tests/FanControlCoreTests/FanControlCoreTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/sources"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper-entitlement.plist"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/Sources/FanControlHelper/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/sources"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlHelper.product/Objects.LinkFileList"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/sources"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCore.build/FanControlCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlCoreTests.build/FanControlCoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.build/runner.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControlPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

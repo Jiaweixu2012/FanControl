@@ -1,0 +1,19 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/xujiawei/FanControl/.build/x86_64-apple-macosx/debug/FanControl'
+relocations:
+  - { offset: 0x91, size: 0x8, addend: 0x0, symName: _FanControlApp_main, symObjAddr: 0x0, symBinAddr: 0x100000980, symSize: 0x1C0 }
+  - { offset: 0xA7, size: 0x8, addend: 0x0, symName: _FanControlApp_main, symObjAddr: 0x0, symBinAddr: 0x100000980, symSize: 0x1C0 }
+  - { offset: 0xC4, size: 0x8, addend: 0x0, symName: '_$sSSWOh', symObjAddr: 0x1C0, symBinAddr: 0x100000B40, symSize: 0x20 }
+  - { offset: 0xD7, size: 0x8, addend: 0x0, symName: '_$ss26DefaultStringInterpolationVWOh', symObjAddr: 0x1E0, symBinAddr: 0x100000B60, symSize: 0x20 }
+  - { offset: 0xEA, size: 0x8, addend: 0x0, symName: '_$sSa12_endMutationyyF', symObjAddr: 0x280, symBinAddr: 0x100000C00, symSize: 0x6 }
+  - { offset: 0x10B, size: 0x8, addend: 0x0, symName: '_$ss27_finalizeUninitializedArrayySayxGABnlF', symObjAddr: 0x200, symBinAddr: 0x100000B80, symSize: 0x40 }
+  - { offset: 0x133, size: 0x8, addend: 0x0, symName: '_$ss5print_9separator10terminatoryypd_S2StFfA0_', symObjAddr: 0x240, symBinAddr: 0x100000BC0, symSize: 0x20 }
+  - { offset: 0x14E, size: 0x8, addend: 0x0, symName: '_$ss5print_9separator10terminatoryypd_S2StFfA1_', symObjAddr: 0x260, symBinAddr: 0x100000BE0, symSize: 0x20 }
+  - { offset: 0x206, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6string_WZ', symObjAddr: 0x0, symBinAddr: 0x100000C10, symSize: 0x30 }
+  - { offset: 0x228, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvpZ', symObjAddr: 0xE00, symBinAddr: 0x100002008, symSize: 0x0 }
+  - { offset: 0x235, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6string_WZ', symObjAddr: 0x0, symBinAddr: 0x100000C10, symSize: 0x30 }
+  - { offset: 0x24E, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvau', symObjAddr: 0x30, symBinAddr: 0x100000C40, symSize: 0x40 }
+  - { offset: 0x285, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionOMa', symObjAddr: 0xA0, symBinAddr: 0x100000CB0, symSize: 0xC }
+  - { offset: 0x2B9, size: 0x8, addend: 0x0, symName: '_$s14FanControlCore0aB7VersionO6stringSSvgZ', symObjAddr: 0x70, symBinAddr: 0x100000C80, symSize: 0x30 }
+...
